@@ -8,7 +8,7 @@ public class Task4 {
     public static void incomeCalc (double amount, int months, int percent) {
         double result = amount;
         for (int i = 0; i < months; i++) {
-            result = result * ((double) percent)/100 + result;
+            result = result * ((double) percent) / 12 / 100 + result;
         }
         result = result - amount;
         System.out.println("The income is: " + result);
